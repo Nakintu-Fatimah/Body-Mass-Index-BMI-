@@ -107,7 +107,7 @@ public class BMIDataGenerator
     }
     else
     {
-    	record.bodyType = BMI.OBESE;
+    	record.bodyType = BMI.OBESES;
     	numObeseSamples++;
     }
     return record;
