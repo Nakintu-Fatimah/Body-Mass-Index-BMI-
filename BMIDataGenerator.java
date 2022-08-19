@@ -1,7 +1,7 @@
 package datagenerator;
 
-import java.util.*;
-import java.io.*;
+import java.util.*;	//package for all java utilities
+import java.io.*;	//package for input and output
 
 public class BMIDataGenerator
 {
