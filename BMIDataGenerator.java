@@ -134,7 +134,7 @@ public class BMIDataGenerator
   
   private static void printUsage()
   {
-	  System.err.println("Usage :");
+	  System.err.println("Usage: ");
 	  System.err.println("  numSamples - Number of data samples");
 	  System.err.println("  OutputFile - Name of the output file to write data to");
   }
