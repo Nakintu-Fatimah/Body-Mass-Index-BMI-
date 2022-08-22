@@ -249,11 +249,14 @@ public class body_mass extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
      System.exit(0);
      
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        double h=Double.parseDouble(jTextField1.getText());
-        double w=Double.parseDouble(jTextField2.getText());
+    }
+    
+    //GEN-LAST:event_jButton3ActionPerformed
+    
+      private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+//GEN-FIRST:event_jButton1ActionPerformed
+        double h = Double.parseDouble(jTextField1.getText());
+        double w = Double.parseDouble(jTextField2.getText());
         
         double bmi=w/(h*h);
         
@@ -261,39 +264,32 @@ public class body_mass extends javax.swing.JFrame {
         
         jTextField3.setText(cal);
         
-        if(bmi<=10){
+        if(bmi <= 10){
             jTextField3.setOpaque(true);
             jTextField3.setBackground(Color.blue);
             jLabel13.setForeground(Color.blue);
             jLabel13.setText("Under_weight");
         }
-        else if(bmi>10&& bmi<=20){
+        else if( bmi > 10 &&  bmi < = 20 ){
             jTextField3.setOpaque(true);
             jTextField3.setBackground(Color.green);
             jLabel13.setForeground(Color.green);
             jLabel13.setText("Normal");
-            
-            
         }
-        
-        else if(bmi>21&& bmi<=30){
+           else if(bmi >21 &&  bmi <= 30){
             jTextField3.setOpaque(true);
             jTextField3.setBackground(Color.orange);
             jLabel13.setForeground(Color.orange);
-            jLabel13.setText("Average");
-            
-            
+            jLabel13.setText("Average");   
         }
-        
-        else if(bmi>=31){
+        else if( bmi >= 31 ){
             jTextField3.setOpaque(true);
             jTextField3.setBackground(Color.red);
             jLabel13.setForeground(Color.red);
-            jLabel13.setText("Severe");
-            
+            jLabel13.setText("Severe");          
             
         }
-                
+                   
                 
     }//GEN-LAST:event_jButton1ActionPerformed
 
