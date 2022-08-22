@@ -64,7 +64,7 @@ public class BMIDataGenerator
 		 writer.write(next.toString());
 		 writer.newLine();
 	 }
-	 writer.close();
+	 writers.close();
 	 
 	 System.out.println("Data Distribution :");
 	 System.out.println("Total Samples : " + numSamples);
@@ -136,6 +136,6 @@ public class BMIDataGenerator
   {
 	  System.err.println("Usage: ");
 	  System.err.println("  numSamples - Number of data samples");
-	  System.err.println("  OutputFile - Name of the output file to write data to");
+	  System.err.println("  OutputFiles - Name of the output files to write data to");
   }
 }
