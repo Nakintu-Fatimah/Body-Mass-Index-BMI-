@@ -5,7 +5,7 @@
  */
 package bmi.cal;
 
-import java.awt.Color;
+import java.awt.Color; 
 
 /**
  *
@@ -307,30 +307,30 @@ public class BMI_FORM extends javax.swing.JFrame {
         
         double Height = Double.parseDouble(Cots.getText());
         double Weight = Double.parseDouble(Cots1.getText());
-        double kk = (Weight/(Height*Height));
-        String cal = String.format( "%.2f", kk);
+        double BMI = (Weight/(Height*Height));
+        String cal = String.format( "%.2f", BMI);
         
         BMI.setText(cal);
-        if (kk<18.5){
+        if (BMI<18.5){
           BMI.setOpaque(true);
           BMI.setBackground(Color.blue);
           jLabel6.setForeground(Color.blue);
           jLabel6.setText("Under Weight");
           
         }
-        else if (kk<=24.9){
+        else if (BMI<=24.9){
          BMI.setOpaque(true);
           BMI.setBackground(Color.red);
           jLabel6.setForeground(Color.red);
           jLabel6.setText("Normal Weight");   
         }
-        else if (kk<=29.9){
+        else if (BMI<=29.9){
            BMI.setOpaque(true);
           BMI.setBackground(Color.pink);
           jLabel6.setForeground(Color.pink);
           jLabel6.setText("OverWeight");
         }
-        else if (kk>=30){
+        else if (BMI>=30){
            BMI.setOpaque(true);
           BMI.setBackground(Color.orange);
           jLabel6.setForeground(Color.orange);
