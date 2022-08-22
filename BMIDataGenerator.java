@@ -10,7 +10,7 @@ public class BMIDataGenerator
 	  UNDER_WEIGHT,
 	  NORMAL,
 	  OVER_WEIGHT,
-	  OBESE
+	  ABNORMAL
   }
   
   private class DataRecord
